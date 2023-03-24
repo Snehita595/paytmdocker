@@ -4,7 +4,7 @@ services:
     image: train:v1
     ports: 
       - "8000:80"
-    volume: 
+    volumes: 
       - "trainvol" 
 
 
@@ -12,21 +12,21 @@ services:
     image: movie:v1
     ports:
       - "8000:81"
-    volume:
+    volumes:
       - "movievol"
 
   loan:
     image: laon:v1
     ports:
       - "8000:82"
-    volume:
+    volumes:
       - "loanvol"
 
   dth:
     image: dth:v1
     ports:
       - "8000:83"
-    volume:
+    volumes:
       - "dthvol"
  
 
